@@ -1,0 +1,184 @@
+* {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	box-sizing: border-box;
+}
+
+#title {
+	font-size: 36px;
+	margin: 18px;
+}
+
+.container1 {
+	display: flex;
+	flex-direction: column;
+	border: solid #3d75a9;
+	border-radius: 8px;
+	margin: 15px 154px;
+	padding-bottom: 95px;
+}
+
+.header {
+	background: #3d75a9;
+	font-size: 14px;
+	color: white;
+}
+
+.header h4 {
+	margin: 13px;
+}
+
+.tags {
+	display: flex;
+	margin: 5px;
+	flex-direction: row;
+	padding: 5px;
+	align-items: center;
+}
+
+.tags input[type="text"], input[type="email"], input[type="date"] {
+	width: 40rem;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 12px;
+	margin-left: 40px;
+	border-radius: 4px;
+}
+
+.tags input[type="text"], input[type="email"], input[type="date"]:active
+	{
+	outline-color: #3d75a9;
+}
+
+label {
+	width: 200px;
+	text-align: right;
+	font-weight: bold;
+}
+
+.radio {
+	margin: 10px;
+	margin-left: 35px;
+}
+
+.innerTag p {
+	margin: 5px 40px;
+	font-size: 14px;
+	color: red;
+	display: none;
+}
+
+.checkbox {
+	margin-top: 3px;
+	margin-left: 35px;
+	position: absolute;
+	top: -11px;
+	left: 0px;
+}
+
+.btn {
+	display: block;
+	border: 1px solid black;
+	font-size: 15px;
+	padding: 9px 18px;
+	margin-left: 240px;
+	color: white;
+	cursor:pointer;
+	background-color: #3d75a9;
+	border-radius: 7px;
+	border: none;
+}
+
+.checkbox input[type="button"]:hover {
+	cursor: pointer;
+}
+
+.error {
+	display: block;
+}
+/** Display part Design */
+.display {
+	display: flex;
+	flex-direction: column;
+	border: solid #3d75a9;
+	border-radius: 8px;
+	margin: 15px 154px;
+}
+
+table, td, th {
+	border: 1px solid #ddd;
+	font-size: 14px;
+	padding: 10px;
+}
+
+table {
+	margin: 25px;
+	border-collapse: collapse;
+	width: -webkit-fill-available;
+}
+
+th {
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+
+.header_below {
+	background: #3d75a9;
+	font-size: 14px;
+	color: white;
+}
+
+.header_below h4 {
+	margin: 13px;
+}
+
+#tbl1 tr td:nth-child(1) {
+	font-weight: bold;
+}
+
+td i:hover {
+	cursor: pointer;
+}
+
+element.style {
+}
+.btns {
+    margin-left: 15px;
+    padding: 4px 11px;
+    background: #3d75a9;
+    color: white;
+    border: white;
+    text-decoration:none;
+    cursor: pointer;
+    /* border-radius: 7px; */
+}
+.displayAdvance {
+	display: flex;
+	flex-direction: column;
+	border: solid #3d75a9;
+	border-radius: 8px;
+	margin: 15px 154px;
+}
+
+.displayAdvance div:nth-child(2) {
+	overflow-x: scroll;
+	margin: 23px;
+}
+
+.errorMsg {
+	text-align: center;
+	font-style: italic;
+	color: #b1aeae;
+}
+
+.innerTag {
+	position: relative;
+}
+
+td input[type="button"] {
+	margin: 0px 15px;
+	margin-left: 0px;
+}
