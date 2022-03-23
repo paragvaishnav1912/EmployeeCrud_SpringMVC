@@ -15,7 +15,7 @@
 		<div class="header">
 			<h4>Add Employee</h4>
 		</div>
-		<form id="employeeForm" action="processPage" method="post">
+		<form id="employeeForm" action="/processPage" method="post">
 			<div class="input_tags">
 				<div class="tags">
 					<label>Name:</label>
