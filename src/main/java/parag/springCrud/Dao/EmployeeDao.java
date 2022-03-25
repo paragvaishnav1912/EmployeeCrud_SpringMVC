@@ -22,4 +22,18 @@ public class EmployeeDao {
 	public List<Employee> getAllEmployee(){
 		return this.hibernateTemplate.loadAll(Employee.class);
 	}
+	
+	public Employee getEmployeeById(int id) {
+		return this.hibernateTemplate.get(Employee.class,id );
+	}
+	
+	@Transactional
+	public void deleteEmployeeById(Employee employee) {
+		this.hibernateTemplate.delete(employee);
+	}
+	
+	@Transactional
+	public void updateEmployeeById(Employee employee) {
+		this.hibernateTemplate.update(employee);
+	}
 }

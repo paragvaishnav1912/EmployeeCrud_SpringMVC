@@ -42,36 +42,36 @@ public class MainController {
 		return "redirect:home";
 	}
 
-//	@RequestMapping(value = "/deleteData/{eid}", method = RequestMethod.GET)
-//	public String deleteProcess(@PathVariable(value = "eid") String empId) {
-//
-//		int id = Integer.parseInt(empId);
-//		logger.warn("process editData starts.." + empId);
-//		this.employeeService.deleteById(id);
-//		return "redirect:/home";
-//	}
-//
-//	@RequestMapping(value = "/editData/{eid}", method = RequestMethod.GET)
-//	public ModelAndView editProcess(@PathVariable(value = "eid") String empId) {
-//
-//		int id = Integer.parseInt(empId);
-//		logger.warn("process EditStarts here.." + empId);
-//		Employee employee = this.employeeService.getEmployeeById(id);
-//		ModelAndView mv = new ModelAndView();
-//		mv.setViewName("updateForm");
-//		logger.warn("the object "+employee.toString());
-//		mv.addObject("employee",employee);
-//		return mv;
-//	}
-//	
-//	@RequestMapping(value = "/updateData/{eid}", method = RequestMethod.POST)
-//	public String updateData(@PathVariable String eid, @ModelAttribute Employee employee) {
-//
-//		int id = Integer.parseInt(eid);
-//		logger.warn("employee data "+employee);
-//		int sucessCode = this.employeeService.updateEmployee(employee, id);
-//		logger.warn("process update form starts.."+sucessCode);
-//		return "redirect:/home";
-//		
-//	}
+	@RequestMapping(value = "/deleteData/{eid}", method = RequestMethod.GET)
+	public String deleteProcess(@PathVariable(value = "eid") String empId) {
+
+		int id = Integer.parseInt(empId);
+		logger.warn("process editData starts.." + empId);
+		Employee employee = this.employeeService.getEmpById(id);
+		this.employeeService.deleteById(employee);
+		return "redirect:/home";
+	}
+
+	@RequestMapping(value = "/editData/{eid}", method = RequestMethod.GET)
+	public ModelAndView editProcess(@PathVariable(value = "eid") String empId) {
+
+		int id = Integer.parseInt(empId);
+		logger.warn("process EditStarts here.." + empId);
+		Employee employee = this.employeeService.getEmpById(id);
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("updateForm");
+		logger.warn("the object "+employee.toString());
+		mv.addObject("employee",employee);
+		return mv;
+	}
+	
+	@RequestMapping(value = "/updateData/{eid}", method = RequestMethod.POST)
+	public String updateData(@PathVariable String eid, @ModelAttribute Employee employee) {
+
+		int id = Integer.parseInt(eid);
+		logger.warn("employee data "+employee);
+		this.employeeService.updateById(employee);
+		return "redirect:/home";
+		
+	}
 }

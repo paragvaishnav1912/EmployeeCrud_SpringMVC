@@ -19,4 +19,16 @@ public class EmployeeService {
 	public List<Employee> getEmployees(){
 		return this.employeeDao.getAllEmployee();
 	}
+	
+	public Employee getEmpById(int id) {
+		return this.employeeDao.getEmployeeById(id);
+	}
+	
+	public void deleteById(Employee employee) {
+		this.employeeDao.deleteEmployeeById(employee);
+	}
+	
+	public void updateById(Employee employee) {
+		this.employeeDao.updateEmployeeById(employee);
+	}
 }

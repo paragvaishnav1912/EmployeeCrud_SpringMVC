@@ -75,7 +75,7 @@
 			</div>
 		</form>
 	</div>
-
+	<c:if test="${!(empty data)}">
 	<div id="display1">
 		<h3 id="header1" align="center">Employee Data</h3>
 		<div id="di" class="display">
@@ -114,5 +114,6 @@
 
 		</div>
 	</div>
+	</c:if>
 </body>
 </html>
