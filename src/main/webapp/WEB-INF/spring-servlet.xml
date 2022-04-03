@@ -68,6 +68,9 @@
 				<value>
 					parag.springCrud.Dto.Employee
 				</value>
+				<value>
+					parag.springCrud.Dto.User
+				</value>
 			</list>
 		</property>
 

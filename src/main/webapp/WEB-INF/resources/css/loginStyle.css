@@ -1,0 +1,53 @@
+@charset "ISO-8859-1";
+
+* {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+		'Lucida Sans', Arial, sans-serif;
+	background: #fafafa;;
+}
+
+.login {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 97px 25px;
+}
+
+.imgLogo img {
+	width: 224px;
+	margin: 12px;
+}
+
+.inputTags input[type="text"], input[type="password"] {
+	padding: 8px 11px;
+	font-size: 16px;
+	width: 22rem;
+	border-radius: 4px;
+	border: 1px solid #4d90bc;
+}
+
+.inputTags input[type="submit"] {
+	top: 50%;
+	background-color: #0a0a23;
+	color: #fff;
+	border: none;
+	border-radius: 10px;
+	padding: 15px;
+	min-height: 30px;
+	min-width: 23.5rem;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.inputOne {
+	margin-bottom: 12px;
+}
+
+.labels {
+	margin: 12px 0px;
+}
+.bottom {
+    margin: 48px;
+    color: black;
+}
